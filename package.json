@@ -1,0 +1,17 @@
+{
+  "name": "schemas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "faker": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
