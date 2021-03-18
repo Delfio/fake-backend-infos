@@ -1,4 +1,4 @@
-[
+const clientes = [
   {
     "cli_codigo": 76813,
     "cli_nome": "MARGUERITE",
@@ -2200,3 +2200,5 @@
     }
   }
 ]
+
+export default clientes;

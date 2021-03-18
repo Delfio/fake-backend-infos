@@ -1,13 +1,11 @@
 import { createServer } from 'http';
 import 'dotenv/config.js'
-import path from 'path';
 import { URLSearchParams } from 'url';
 import clientes from './services/clientes.js';
 import products from './services/products.js';
 
 
-const pathDatabaseDefault = path.resolve(process.cwd(), 'clientes.json');
-const Cliente = new clientes(pathDatabaseDefault);
+const Cliente = new clientes();
 const Produto = new products();
 
 const routes = {
@@ -56,7 +54,6 @@ createServer(async (req, res) => {
     const { url } = req;
     const [route, urlSearch] = url.split('?');
     
-    console.log(route);
     const defaultRoute = routes[route] || routes["default"];
 
 
